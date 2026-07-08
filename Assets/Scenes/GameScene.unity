@@ -2368,6 +2368,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514994255}
   - component: {fileID: 514994254}
+  - component: {fileID: 514994256}
   m_Layer: 0
   m_Name: MusicManager
   m_TagString: Untagged
@@ -2487,6 +2488,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &514994256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514994253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4ced94981ab314a8724558d0645a7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MusicManager
 --- !u!1 &544510021
 GameObject:
   m_ObjectHideFlags: 0
@@ -6315,6 +6328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1825466648}
+  - component: {fileID: 1825466649}
   m_Layer: 5
   m_Name: OptionsUI
   m_TagString: Untagged
@@ -6345,6 +6359,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1825466649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825466647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94520c391b4752f44813ce4eb0e08495, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OptionsUI
+  soundEffectsButton: {fileID: 1678618304}
+  musicButton: {fileID: 687614986}
+  soundEffectsText: {fileID: 299308424}
+  musicText: {fileID: 803797147}
 --- !u!1 &1921525311
 GameObject:
   m_ObjectHideFlags: 0
