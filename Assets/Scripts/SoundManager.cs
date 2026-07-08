@@ -5,6 +5,8 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance { get; private set; }
 
+    private float volume = 1f;
+
     [SerializeField] private AudioClipRefsSO audioClipRefsSO;
 
     private void Awake()
@@ -70,8 +72,22 @@ public class SoundManager : MonoBehaviour
         AudioSource.PlayClipAtPoint(audioClip, postion, volume);
     }
 
-    public void PlayFootstepSound(Vector3 postion, float volume = 1f)
+    public void PlayFootstepSound(Vector3 postion, float volumeMultiplier = 1f)
     {
-        PlaySound(audioClipRefsSO.footstep, postion, volume);
+        PlaySound(audioClipRefsSO.footstep, postion, volumeMultiplier);
+    }
+
+    public void ChangeVolume()
+    {
+        volume += 0.1f;
+        if (volume > 1f)
+        {
+            volume = 0f;
+        }
+    }
+
+    public float GetVolume()
+    {
+        return volume;
     }
 }
