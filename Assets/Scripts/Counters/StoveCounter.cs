@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using static CuttingCounter;
 
-public class StoveCounter : BaseCounter,IHasProgress
+public class StoveCounter : BaseCounter , IHasProgress
 {
     public event EventHandler<IHasProgress.OnProgressChangedEventArgs> OnProgressChanged;
     public event EventHandler<OnStateChangedEventArgs> OnStateChanged;
@@ -211,5 +211,10 @@ public class StoveCounter : BaseCounter,IHasProgress
             }
         }
         return null;
+    }
+
+    public bool IsFried()
+    {
+        return state == State.Fried;
     }
 }

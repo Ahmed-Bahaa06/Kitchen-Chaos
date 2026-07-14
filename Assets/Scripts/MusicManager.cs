@@ -23,7 +23,7 @@ public class MusicManager : MonoBehaviour
     public void ChangeVolume()
     {
         volume += 0.1f;
-        if (volume > 1f)
+        if (volume >= 1f)
         {
             volume = 0f;
         }
